@@ -11,7 +11,7 @@ import SwiftUI
 struct TextStylesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AcrosticPoemView()
         }
     }
 }
