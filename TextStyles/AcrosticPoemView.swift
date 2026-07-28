@@ -33,7 +33,6 @@ struct AcrosticPoemView: View {
         .init(line: "Moments woven with desire,"),
         .init(line: "Soaring dreams, higher and higher"),
     ]
-    
     var body: some View {
         VStack {
             Text("\(Text("D").foregroundStyle(.red).bold().font(.largeTitle))reams. \(Text("Very cool").foregroundStyle(.green))")
@@ -42,7 +41,7 @@ struct AcrosticPoemView: View {
             Spacer()
             VStack(alignment: .leading) {
                 ForEach(poem) { line in
-                    Text("\(Text(line.firstChar).foregroundStyle(.red).bold())\(line.remainingLine)")
+                    colorFirstLetterOfLineOfPoetry(line: line)
                 }
                 .font(.headline)
             }
