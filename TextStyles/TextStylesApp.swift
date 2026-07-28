@@ -12,7 +12,8 @@ struct TextStylesApp: App {
     var body: some Scene {
         WindowGroup {
 //            AcrosticPoemView()
-            Markdown_Demo()
+//            Markdown_Demo()
+            OpenURLAction_Demo()
         }
     }
 }
